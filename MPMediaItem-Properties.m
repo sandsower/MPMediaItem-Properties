@@ -99,7 +99,12 @@
 	return [[self valueForProperty:MPMediaItemPropertyDiscCount] intValue];	
 }
 
-- (UIImage *) artwork
+- (MPMediaItemArtwork *) artwork
+{
+    return [self valueForProperty: MPMediaItemPropertyArtwork];
+}
+
+- (UIImage *) artworkImage
 {
     MPMediaItemArtwork *artwork = [self valueForProperty: MPMediaItemPropertyArtwork];
 	return [artwork imageWithSize:CGSizeMake(256.0f, 256.0f)];
