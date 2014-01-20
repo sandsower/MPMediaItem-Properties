@@ -40,4 +40,5 @@
 @property (nonatomic, readonly) NSInteger rating;
 
 @property (nonatomic, readonly) NSDate *lastPlayedDate;
+@property (nonatomic, readonly) BOOL isCloudItem;
 @end

@@ -144,4 +144,10 @@
 {
 	return [self valueForProperty:MPMediaItemPropertyLastPlayedDate];
 }
+
+-(BOOL)isCloudItem
+{
+    return [self valueForKey:MPMediaItemPropertyIsCloudItem];
+}
+
 @end
