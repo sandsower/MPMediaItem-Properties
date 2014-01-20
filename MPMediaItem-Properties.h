@@ -11,6 +11,7 @@
 @property (nonatomic, readonly) long long persistentID;
 
 @property (nonatomic, readonly) NSInteger mediaType;
+@property (nonatomic, readonly) NSString *assetURL;
 
 @property (nonatomic, readonly) NSString *title;
 @property (nonatomic, readonly) NSString *albumTitle;

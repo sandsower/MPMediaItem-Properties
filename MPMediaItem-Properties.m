@@ -44,6 +44,11 @@
 	return [[self valueForProperty:MPMediaItemPropertyMediaType] intValue];
 }
 
+- (NSString *) assetURL
+{
+    return [[self valueForProperty:MPMediaItemPropertyAssetURL] absoluteString];
+}
+
 - (NSString *) title
 {
 	return [self valueForProperty:MPMediaItemPropertyTitle];
