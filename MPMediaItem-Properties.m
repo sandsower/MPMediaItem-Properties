@@ -152,7 +152,7 @@
 
 -(BOOL)isCloudItem
 {
-    return [self valueForKey:MPMediaItemPropertyIsCloudItem];
+    return [[self valueForProperty:MPMediaItemPropertyIsCloudItem] boolValue];
 }
 
 @end
